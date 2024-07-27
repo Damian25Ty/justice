@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <iframe id="frame1" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage1()">
+   <iframe id="frame2" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage2()">
+   <iframe id="frame3" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage3()">
+   <iframe id="frame4" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage4()">
+   <iframe id="frame5" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage5()">
+   <iframe id="frame6" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage6()">
+   <iframe id="frame7" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage7()">
+   <iframe id="frame8" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage8()">
+   <iframe id="frame9" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage9()">
+   <iframe id="frame10" src="" frameborder="0" width="400px" height="400px"></iframe><input type="file" name="" id="file" onchange="uploadimage10()">
+   <script>
+    function uploadimage1(){
+            var frame1 = document.getElementById("frame1");
+            frame1.src = URL.createObjectURL(event.target.files[0]);
+            frameValue1 = frame1.src
+            localStorage.setItem('Frame1', frameValue1);
+        }
+    function uploadimage2(){
+            var frame2 = document.getElementById("frame2");
+            frame2.src = URL.createObjectURL(event.target.files[0]);
+            frameValue2 = frame2.src
+            localStorage.setItem('Frame2', frameValue2);
+        }
+    function uploadimage3(){
+            var frame3 = document.getElementById("frame3");
+            frame3.src = URL.createObjectURL(event.target.files[0]);
+            frameValue3 = frame3.src
+            localStorage.setItem('Frame3', frameValue3);
+        }
+    function uploadimage4(){
+            var frame4 = document.getElementById("frame4");
+            frame4.src = URL.createObjectURL(event.target.files[0]);
+            frameValue4 = frame4.src
+            localStorage.setItem('Frame4', frameValue4);
+        }
+    function uploadimage5(){
+            var frame5 = document.getElementById("frame5");
+            frame5.src = URL.createObjectURL(event.target.files[0]);
+            frameValue5 = frame5.src
+            localStorage.setItem('Frame5', frameValue5);
+        }
+    function uploadimage6(){
+            var frame6 = document.getElementById("frame6");
+            frame6.src = URL.createObjectURL(event.target.files[0]);
+            frameValue6 = frame6.src
+            localStorage.setItem('Frame6', frameValue6);
+        }
+    function uploadimage7(){
+            var frame7 = document.getElementById("frame7");
+            frame7.src = URL.createObjectURL(event.target.files[0]);
+            frameValue7 = frame7.src
+            localStorage.setItem('Frame7', frameValue7);
+        }
+    function uploadimage8(){
+            var frame8 = document.getElementById("frame8");
+            frame8.src = URL.createObjectURL(event.target.files[0]);
+            frameValue8 = frame8.src
+            localStorage.setItem('Frame8', frameValue8);
+        }
+    function uploadimage9(){
+            var frame9 = document.getElementById("frame9");
+            frame9.src = URL.createObjectURL(event.target.files[0]);
+            frameValue9 = frame9.src
+            localStorage.setItem('Frame9', frameValue9);
+        }
+    function uploadimage10(){
+            var frame10 = document.getElementById("frame10");
+            frame10.src = URL.createObjectURL(event.target.files[0]);
+            frameValue10 = frame10.src
+            localStorage.setItem('Frame10', frameValue10);
+        }
+        const Frame1 = localStorage.getItem('Frame1');
+        const Frame2 = localStorage.getItem('Frame2');
+        const Frame3 = localStorage.getItem('Frame3');
+        const Frame4 = localStorage.getItem('Frame4');
+        const Frame5 = localStorage.getItem('Frame5');
+        const Frame6 = localStorage.getItem('Frame6');
+        const Frame7 = localStorage.getItem('Frame7');
+        const Frame8 = localStorage.getItem('Frame8');
+        const Frame9 = localStorage.getItem('Frame9');
+        const Frame10 = localStorage.getItem('Frame10');
+    
+        document.getElementById('frame1').src = Frame1;       
+        document.getElementById('frame2').src = Frame2;       
+        document.getElementById('frame3').src = Frame3;       
+        document.getElementById('frame4').src = Frame4;       
+        document.getElementById('frame5').src = Frame5;       
+        document.getElementById('frame6').src = Frame6;       
+        document.getElementById('frame7').src = Frame7;       
+        document.getElementById('frame8').src = Frame8;       
+        document.getElementById('frame9').src = Frame9;       
+        document.getElementById('frame10').src = Frame10;       
+             
+
+   </script>
+</body>
+</html>

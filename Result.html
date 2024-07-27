@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESULT PORTAL</title>
+    <style>
+    body{
+        background: linear-gradient(to right, #0f2029, #041414, #052545);
+        font-family: 'poppins', sans-serif;
+    }
+    
+    #form{
+     width: 300px;
+     margin: 0vh auto 0 auto;
+     padding: 20px;
+     background-color: whitesmoke;
+     border-radius: 4px;
+     font-size: 12px;   
+     text-align: center;
+    }
+    #error{
+      text-align: center;
+      position: center;
+    -webkit-text-fill-color: red;  
+    }
+    @media only screen and (max-width: 400px){
+        body{
+            width: 90%;
+            height: 90%;
+        }
+       #form{
+        width: 70%;
+       }
+        
+    }
+      @media only screen and (max-width: 800px){
+        body{
+            width: 90%;
+            height: 90%;
+        }
+        #form{
+            width: 70%;
+        }
+    }
+    </style>
+</head>
+<body>
+    <br><br><br><br><br><br><br><br><br><br><br>
+    <div id="error"></div>
+    <fieldset id="form">
+        <div>
+            <input type="text" name="name" placeholder="Name Of Student" id="name" style="font-size: large" required>
+            <br>
+            <br>
+        </div>
+        <div>
+
+            <input type="text" name="code" placeholder="Input Scratch Code" id="code" style="font-size: large;" required>
+        </div>
+        <br>
+        <button id="submit">Submit</button>
+    </fieldset>
+    <script>
+const Code = document.getElementById('code')
+const Name = document.getElementById('name')
+const btn = document.getElementById('submit')
+const errrorElement = document.getElementById('error')
+btn.addEventListener('click', (e) => {
+    let messages = []
+    if (Name.value == 'EDAFE JUSTICE' & Code.value === "121221") {
+            window.location.href="EDAFE JUSTICE.pdf"
+         }
+    if (Name.value == 'ADEWALE ROLI' & Code.value === "121212") {
+            window.location.href="ADEWALE ROLI.pdf"
+         }
+    else{messages.push('Invalid Credential. Please enter the correct Name and Pass-Code !')}
+    
+    if (messages.length >0) {
+             e.preventDefault()
+             errrorElement.innerText = messages.join(', ')
+            }
+})
+</script>
+</body>
+</html>

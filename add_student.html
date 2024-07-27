@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Students</title>
+</head>
+<body>
+    <form>
+        <button formaction="RESULTS.html" style="border: 0;"><=</button><br><br>
+    </form>
+    <h1 style="text-align:center;">List of Students in <input type="text"id="Class"style=font-size:25px;></h1><h1 id="class"></h1>
+    <label id="students"></label>
+    <br><br><br><br>
+    <label style="text-align:center;">Add Students:</label><input type="text"id="students+">
+    <br>
+    <button id="Add">Add</button>
+    <button id="Remove">Remove</button>
+    <script>
+        const Class = document.getElementById('Class')
+        const Students = document.getElementById('students')
+        const Student = document.getElementById('students+')
+        const Abtn = document.getElementById('Add')
+        const Rbtn = document.getElementById('Remove')
+        const SName = localStorage.getItem('Tnames')
+
+        Abtn.onclick = function(){
+            
+                Students.innerHTML += Student.value + "<br>";
+                Student.value =""
+        }
+        Rbtn.onclick = function(){
+
+        }
+        
+    </script>
+</body>
+</html>
